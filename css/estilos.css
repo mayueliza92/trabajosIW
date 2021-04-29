@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #f3f3f3;
+	color: #000;
+	font-family: sans-serif;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1024px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr); 
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas: "header header header"
+						 "menu menu menu"
+						 "galeria galeria galeria"
+						 "plantas1 plantas2 plantas3"
+						 "servicio1 servicio2 servicio2"
+						 
+						 "sponsor sponsor sponsor"
+						 "footer footer footer";
+
+
+
+}
+
+.contenedor > section,
+.contenedor .cabecera,
+.contenedor .menuPrincipal,
+.contenedor .galeria,
+.contenedor .plantas,
+.contenedor .servicio,
+.contenedor .animales,
+.contenedor .sponsor,
+.contenedor .footer{
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .cabecera{
+background: #063D4F;
+color: #fff;
+grid-area: header;
+}
+
+.contenedor .menuPrincipal{
+background: #063D4F;
+color: #fff;
+text-align: center;
+grid-area: menu;
+}
+
+.contenedor .galeria{
+background: #5B3C03;
+color: #fff;
+text-align: center;
+grid-area: galeria;
+padding: 100px;
+margin: 5px 40px;
+}
+
+.contenedor .plantaG,
+.contenedor .plantaM,
+.contenedor .plantaA
+{
+background: #B08840;
+color: #fff;
+text-align: center;
+}
+
+.contenedor .plantaG{
+
+grid-area: plantas1;
+}
+
+.contenedor .plantaM{
+
+grid-area: plantas2;
+}
+
+.contenedor .plantaA{
+
+grid-area: plantas3;
+}
+
+.contenedor .servicioH,
+.contenedor .servicioR
+{
+background: #B08840;
+color: #fff;
+text-align: center;
+}
+
+.contenedor .servicioH{
+
+grid-area: servicio1;
+}
+
+.contenedor .servicioR{
+
+grid-area: servicio2;
+}
+
+.contenedor .sponsor{
+background: #76ADBF;
+color: #fff;
+text-align: center;
+grid-area: sponsor;
+}
+.contenedor .footer{
+background: #063D4F;
+color: #fff;
+text-align: center;
+grid-area: footer;
+}
